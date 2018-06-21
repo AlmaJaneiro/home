@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bingo University</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=20">
+	
+</head>
+<body>
+	<div class="main">
+		<div class="contenedor-btn">
+			<div class="bton">
+				<img id="click-aqui" class="click-aqui" src="img/enter.png">
+			</div>
+		</div>
+		<div id="bolas" class="bolas"></div>
+		<div class="contendor-bingo">
+			<img id="tombola" src="img/contenedor-2.png">
+		</div>
+		<div id="resultado" class="resultado"> </div>
+		<div id="counter" class="counter"></div>
+
+
+
+		<!-- Tablero de resultados 
+		<div class="tablero-resultados">
+			<div class="circulin-ganador" style="left: 3px;"></div>
+			<div class="circulin-ganador-dos" style="left: 30px;"></div>
+			<div class="circulin-ganador" style="left: 60px;"></div>
+			<div class="circulin-ganador-dos" style="left: 90px;"></div>
+			<div class="circulin-ganador" style="left: 120px;"></div>
+			<div class="circulin-ganador-dos" style="left: 150px;"></div>
+			<div class="circulin-ganador" style="left: 180px;"></div>
+			<div class="circulin-ganador-dos" style="left: 210px;"></div>
+			<div class="circulin-ganador" style="left: 240px;"></div>
+			<div class="circulin-ganador-dos" style="left: 270px;"></div>
+			<div class="circulin-ganador" style="left: 300px;"></div>
+			<div class="circulin-ganador-dos" style="left: 330px;"></div>
+			<div class="circulin-ganador" style="left: 360px;"></div>
+			<div class="circulin-ganador-dos" style="left: 390px;"></div>
+			<div class="circulin-ganador" style="left: 420px;"></div>
+			<div class="circulin-ganador-dos" style="left: 450px;"></div>
+			<div class="circulin-ganador" style="left: 480px;"></div>
+			<div class="circulin-ganador-dos" style="left: 509px;"></div>
+			<div class="circulin-ganador" style="left: 534px;top: 21px;"></div>
+			<div class="circulin-ganador-dos" style="left: 546px;top: 49px;"></div>
+			<div class="circulin-ganador" style="left: 539px;top: 77px;"></div>
+			<div class="circulin-ganador-dos" style="left: 512px;top: 103px;"></div>
+			<div class="circulin-ganador" style="left: 485px;top: 103px;"></div>
+			<div class="circulin-ganador-dos" style="left: 453px;top: 103px;"></div>
+			<div class="circulin-ganador" style="left: 424px;top: 103px;"></div>
+			<div class="circulin-ganador-dos" style="left: 395px;top: 103px;"></div>
+			<div class="circulin-ganador" style="left: 366px;top: 103px;"></div>
+			<div class="circulin-ganador-dos" style="left: 337px;top: 103px;"></div>
+			<div class="circulin-ganador" style="left: 308px;top: 103px;"></div>
+			<div class="circulin-ganador-dos" style="left: 275px;top: 103px;"></div>
+			<div class="circulin-ganador" style="left: 242px;top: 103px;"></div>
+			<div class="circulin-ganador-dos" style="left: 209px;top: 103px;"></div>
+			<div class="circulin-ganador" style="left: 176px;top: 103px;"></div>
+			<div class="circulin-ganador-dos" style="left: 143px;top: 103px;"></div>
+			<div class="circulin-ganador" style="left: 110px;top: 103px;"></div>
+			<div class="circulin-ganador-dos" style="left: 77px;top: 103px;"></div>
+			<div class="circulin-ganador" style="left: 44px;top: 103px;"></div>
+			<div class="circulin-ganador-dos" style="left: 5px;top: 103px;"></div>
+			<div class="circulin-ganador" style="left:3px;top: 69px;"></div>
+			<div class="circulin-ganador-dos" style="left:3px;top: 37px;"></div>
+			<table id="tabla-de-resultados">
+				<tr>
+					<td>
+						<div id="bingo-8">    
+							<div id="bola-8">
+								<div class="border-circulo-fn">
+									<div class="circulo-dos-fn">
+										<p data-id="1" class="numero-dos-fn">91</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div id="bingo-8">    
+							<div id="bola-8">
+								<div class="border-circulo-fn">
+									<div class="circulo-dos-fn">
+										<p data-id="2" class="numero-dos-fn">15</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div id="bingo-8">    
+							<div id="bola-8">
+								<div class="border-circulo-fn">
+									<div class="circulo-dos-fn">
+										<p data-id="3" class="numero-dos-fn">20</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div id="bingo-8">    
+							<div id="bola-8">
+								<div class="border-circulo-fn">
+									<div class="circulo-dos-fn">
+										<p data-id="4" class="numero-dos-fn">98</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div id="bingo-8">    
+							<div id="bola-8">
+								<div class="border-circulo-fn">
+									<div class="circulo-dos-fn">
+										<p data-id="5" class="numero-dos-fn">88</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div id="bingo-8">    
+							<div id="bola-8">
+								<div class="border-circulo-fn">
+									<div class="circulo-dos-fn">
+										<p data-id="6" class="numero-dos-fn">2</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div id="bingo-8">    
+							<div id="bola-8">
+								<div class="border-circulo-fn">
+									<div class="circulo-dos-fn">
+										<p data-id="7" class="numero-dos-fn">82</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div id="bingo-8">    
+							<div id="bola-8">
+								<div class="border-circulo-fn">
+									<div class="circulo-dos-fn">
+										<p data-id="8" class="numero-dos-fn">42</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div id="bingo-8">    
+							<div id="bola-8">
+								<div class="border-circulo-fn">
+									<div class="circulo-dos-fn">
+										<p data-id="9" class="numero-dos-fn">92</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div id="bingo-8">    
+							<div id="bola-8">
+								<div class="border-circulo-fn">
+									<div class="circulo-dos-fn">
+										<p data-id="10" class="numero-dos-fn">15</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		-->
+
+		<div class="team">
+			<label id="equipo"></label>
+		</div>
+
+		<!-- Tablero -->
+		<div class="tablero">
+			<div class="circulin-dos crl" style="left: 40px;"></div>
+			<div class="circulin crl" 	style="left: 80px;"></div>
+			<div class="circulin-dos crl" style="left: 120px;"></div>
+			<div class="circulin crl" style="left: 160px;"></div>
+			<div class="circulin-dos crl" style="left: 200px;"></div>
+			<div class="circulin crl" style="left: 240px;"></div>
+			<div class="circulin-dos crl" style="left: 280px;"></div>
+			<div class="circulin crl" style="left: 320px;"></div>
+			<div class="circulin-dos crl" style="left: 360px;"></div>
+			<div class="circulin crl" style="left: 400px;"></div>
+			<div class="circulin-dos crl" style="left: 440px;"></div>
+			<div class="circulin crl" style="left: 480px;"></div>
+			<div class="circulin-dos crl" style="left: 520px;"></div>
+			<div class="circulin crl" style="left: 560px;"></div>
+			<div class="circulin-dos crl" style="left: 600px;"></div>
+			<div class="circulin crl" style="left: 640px;"></div>
+			<div class="circulin-dos crl" style="left: 680px;"></div>
+			<div class="circulin crl" style="left: 720px;"></div>
+			<div class="circulin-dos crl" style="left: 760px;"></div>
+			<div class="circulin crl" style="left: 800px;"></div>
+			<div class="circulin-dos crl" style="left: 840px;"></div>
+			<div class="circulin crl" style="left: 880px;"></div>
+			<div class="circulin-dos crl" style="left: 920px;"></div>
+			<div class="circulin crl" style="left: 960px;"></div>
+			<div class="circulin-dos crl" style="left: 1000px;"></div>
+			<div class="circulin crl" style="left: 1040px;"></div>
+			<div class="circulin-dos crl" style="left: 1080px;"></div>
+			<div class="circulin crl" style="left: 1120px;"></div>
+			<div class="circulin-dos crl" style="left: 1160px;"></div>
+			<div class="circulin" style="position: absolute;left: 1207px;top: -9px;"></div>
+			<div class="circulin-dos" style="position: absolute;left: 1198px;top: 33px;"></div>
+			<div class="circulin" style="position: absolute;left: 1191px;top: 73px;"></div>
+			<div class="circulin-dos" style="position: absolute;left: 1184px;top:113px;"></div>
+			<div class="circulin" style="position: absolute;left: 1177px;top: 153px;"></div>
+			<div class="circulin-dos" style="position: absolute;left: 1170px;top:193px;"></div>
+			<div class="circulin" style="position: absolute;left: 1163px;top:233px;"></div>
+			<div class="circulin-dos" style="position: absolute;left: 1154px;top:273px;"></div>
+			<div class="circulin" style="position: absolute;left: 1144px;top:313px;"></div>
+			<div class="circulin-dos crcl" style="left: 1106px;"></div>
+			<div class="circulin crcl" style="left: 1066px;"></div>
+			<div class="circulin-dos crcl" style="left: 1026px;"></div>
+			<div class="circulin crcl" style="left: 986px;"></div>
+			<div class="circulin-dos crcl" style="left: 946px;"></div>
+			<div class="circulin crcl" style="left: 906px;"></div>
+			<div class="circulin-dos crcl" style="left: 866px;"></div>
+			<div class="circulin crcl" style="left: 826px;"></div>
+			<div class="circulin-dos crcl" style="left: 786px;"></div>
+			<div class="circulin crcl" style="left: 746px;"></div>
+			<div class="circulin-dos crcl" style="left: 706px;"></div>
+			<div class="circulin crcl" style="left: 666px;"></div>
+			<div class="circulin-dos crcl" style="left: 626px;"></div>
+			<div class="circulin crcl" style="left: 586px;"></div>
+			<div class="circulin-dos crcl" style="left: 546px;"></div>
+			<div class="circulin crcl" style="left: 506px;"></div>
+			<div class="circulin-dos crcl" style="left: 466px;"></div>
+			<div class="circulin crcl" style="left: 426px;"></div>
+			<div class="circulin-dos crcl" style="left: 386px;"></div>
+			<div class="circulin crcl" style="left: 346px;"></div>
+			<div class="circulin-dos crcl" style="left: 306px;"></div>
+			<div class="circulin crcl" style="left: 266px;"></div>
+			<div class="circulin-dos crcl" style="left: 226px;"></div>
+			<div class="circulin crcl" style="left: 186px;"></div>
+			<div class="circulin-dos crcl" style="left: 146px;"></div>
+			<div class="circulin crcl" style="left: 106px;"></div>
+			<div class="circulin-dos crcl" style="left: 66px;"></div>
+			<div class="circulin-dos" style="position: absolute;left: 35px;top: 313px;"></div>
+			<div class="circulin" style="position: absolute; left:24px;top:273px;"></div>
+			<div class="circulin-dos" style="position: absolute; left: 17px;top: 231px;"></div>
+			<div class="circulin" style="position: absolute;left: 12px;top:191px;"></div>
+			<div class="circulin-dos" style="position: absolute;left: 5px;top: 151px;"></div>
+			<div class="circulin" style="position: absolute;left:-1px;top:111px;"></div>
+			<div class="circulin-dos" style="position: absolute;left:-9px;top:71px;"></div>
+			<div class="circulin" style="position: absolute;left: -16px;top:31px;"></div>
+		</div>
+		<!-- Tablero -->
+
+		<!-- Área de preguntas -->
+		<div class="pregunta">
+			<label id="pregunta"></label>
+		</div>
+		<div class="respuesta">
+			<!-- <input type="text" class="form-control" id="respuesta" name="respuesta">-->
+			<div class="radio" style="padding-bottom: 25px;">
+			  <label><input type="radio" id="radio_1" name="preguntas"><span id="span_1"></span></label>
+			</div>
+			<div class="radio" style="padding-bottom: 22px;">
+			  <label><input type="radio" id="radio_2" name="preguntas"><span id="span_2"></span></label>
+			</div>
+			<div class="radio disabled">
+			  <label><input type="radio" id="radio_3" name="preguntas"><span id="span_3"></span></label>
+			</div>
+		</div>
+		<div class="boton-aceptar">
+			<button class="btn btn-primary">Aceptar</button>
+		</div>
+		<div class="mensaje_correcto">
+			<label id="mensaje_respuesta"></label>
+		</div>
+		<!-- Área de preguntas -->
+
+	</div>
+
+
+</body>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/funciones.js?v=50"></script>
+	<script>
+		  
+
+	</script>
+</html>
